@@ -1,0 +1,24 @@
+{
+  "hubId": "system-control",
+  "name":"system controller",
+  "active":true,
+  "schema": "skill-1.0.0",
+  "version": "1.0.0",
+  "description": "Allows the AI to control the Linux desktop: open applications, run shell commands, change system settings, manage files, and more.",
+  "author": "@azertyvirus",
+  "author_url":"https://github.com/VortexVirus",
+    "entrypoint": {
+    "file": "handler.js",
+    "params": {
+      "command": {
+        "type": "string",
+        "description": "Shell command to execute directly on the system"
+      },
+      "timeout": {
+        "type": "number",
+        "description": "Optional timeout in ms",
+        "nullable": true
+      }
+    }
+  }
+}
