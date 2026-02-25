@@ -1,22 +1,14 @@
 # how.sh - Create and execute shell commands using LLM
 
-Use any LLM supported by [LLM CLI](https://llm.datasette.io/en/stable/index.html),
-including OpenAI LLMs or local models provided by Ollama and any other LLM engines 
-supported by LLM CLI.
-
 ## Use at your own risk
 
 This script is experimental and may not work as expected. Use at your own risk.
+The script has limited safety guards and should only be used when knowing how to fix your system.
 
 ## Prerequisites
 
-### Install llm CLI
+### Install Ollama
 
-Follow the instructions at https://llm.datasette.io/en/stable/index.html.
-
-### [Optional] Install Ollama and Ollama llm plugin
-
-You don't have to do this unless you want to use Ollama models hosted on your own machine.
 Depending on the LLM you use, your results may vary. Currently, this script is mostly tested
 with Ollama-hosted deepseek-coder-v2 model.
 
@@ -26,18 +18,6 @@ To use deepseek-coder-v2 model, you need to pre-load it:
 
 ```terminal
 ollama pull deepseek-coder-v2
-```
-
-After installing Ollama, install the Ollama llm plugin:
-
-```terminal
-pip install llm-ollama
-```
-
-Verify that everything works:
-
-```terminal
-llm -m ollama/deepseek-coder-v2 "list files in the current directory"
 ```
 
 how.sh uses deepseek-coder-v2 by default, but you can use [any other model supported by ollama](https://ollama.ai/library).
