@@ -4,6 +4,7 @@
 
 This script is experimental and may not work as expected. Use at your own risk.
 The script has limited safety guards and should only be used when knowing how to fix your system.
+It is also made for me and my use only, you should probably read it and modify it to your needs.
 
 ## Prerequisites
 
